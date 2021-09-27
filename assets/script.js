@@ -52,6 +52,7 @@ var twoPM = moment("2:00:pm", format)
 var threePM = moment("3:00:pm", format)
 var fourPM = moment("4:00:pm", format)
 var fivePM = moment("5:00:pm", format)
+var sixPM = moment("6:00:pm", format)
 
 function Day() {
 
@@ -131,10 +132,10 @@ function Clear() {
 
 function isBetween() {
 
-    var times = [nineAM,tenAM,elevenAM,twelvePM,onePM,twoPM,threePM,fourPM,fivePM]
+    var times = [nineAM,tenAM,elevenAM,twelvePM,onePM,twoPM,threePM,fourPM,fivePM,sixPM]
     var between = []
 
-    for (let i= 0;i<8;i++) {
+    for (let i= 0;i<9;i++) {
 
         var a = times[0]
         var b = times[1]
@@ -145,29 +146,30 @@ function isBetween() {
 
         times.shift(a)
     }
+    console.log(between)
 
     if (between.includes(nineAM)) {
-        rownine.setAttribute("style", "background-color: blue")
+        rownine.setAttribute("class", "present")
     } else if (between.includes(tenAM)) {
-        rowten.setAttribute("style", "background-color: blue")
+        rowten.setAttribute("class", "present")
     }  else if (between.includes(elevenAM)) {
-        roweleven.setAttribute("style", "background-color: blue")
+        roweleven.setAttribute("class", "present")
     }  else if (between.includes(twelvePM)) {
-        rowtwelve.setAttribute("style", "background-color: blue")
+        rowtwelve.setAttribute("class", "present")
     }  else if (between.includes(onePM)) {
-        rowone.setAttribute("style", "background-color: blue")
+        rowone.setAttribute("class", "present")
     }  else if (between.includes(twoPM)) {
-        rowtwo.setAttribute("style", "background-color: blue")
+        rowtwo.setAttribute("class", "present")
     } else if (between.includes(threePM)) {
-        rowthree.setAttribute("style", "background-color: blue")
+        rowthree.setAttribute("class", "present")
     }  else if (between.includes(fourPM)) {
-        rowfour.setAttribute("style", "background-color: blue")
+        rowfour.setAttribute("class", "present")
     }  else if (between.includes(fivePM)) {
-        rowfive.setAttribute("style", "background-color: blue")
+        rowfive.setAttribute("class", "present")
     }
 }
 
-function Moment() {
+function BeforeAfter() {
 
     var times = [nineAM,tenAM,elevenAM,twelvePM,onePM,twoPM,threePM,fourPM,fivePM]
 
@@ -184,43 +186,43 @@ function Moment() {
     }
 
     if (before.includes(nineAM)) {
-        rownine.setAttribute("style", "background-color: gray")
+        rownine.setAttribute("class", "past")
     }if (before.includes(tenAM)) {
-        rowten.setAttribute("style", "background-color: gray")
+        rowten.setAttribute("class", "past")
     }if (before.includes(elevenAM)) {
-        roweleven.setAttribute("style", "background-color: gray")
+        roweleven.setAttribute("class", "past")
     }if (before.includes(twelvePM)) {
-        rowtwelve.setAttribute("style", "background-color: gray")
+        rowtwelve.setAttribute("class", "past")
     }if (before.includes(onePM)) {
-        rowone.setAttribute("style", "background-color: gray")
+        rowone.setAttribute("class", "past")
     }if (before.includes(twoPM)) {
-        rowtwo.setAttribute("style", "background-color: gray")
+        rowtwo.setAttribute("class", "past")
     }if (before.includes(threePM)) {
-        rowthree.setAttribute("style", "background-color: gray")
+        rowthree.setAttribute("class", "past")
     }if (before.includes(fourPM)) {
-        rowfour.setAttribute("style", "background-color: gray")
+        rowfour.setAttribute("class", "past")
     }if (before.includes(fivePM)) {
-        rowfive.setAttribute("style", "background-color: gray")
+        rowfive.setAttribute("class", "past")
     }
 
     if (after.includes(nineAM)) {
-        rownine.setAttribute("style", "background-color: green")
+        rownine.setAttribute("class", "future")
     }if (after.includes(tenAM)) {
-        rowten.setAttribute("style", "background-color: green")
+        rowten.setAttribute("class", "future")
     }if (after.includes(elevenAM)) {
-        roweleven.setAttribute("style", "background-color: green")
+        roweleven.setAttribute("class", "future")
     }if (after.includes(twelvePM)) {
-        rowtwelve.setAttribute("style", "background-color: green")
+        rowtwelve.setAttribute("class", "future")
     }if (after.includes(onePM)) {
-        rowone.setAttribute("style", "background-color: green")
+        rowone.setAttribute("class", "future")
     }if (after.includes(twoPM)) {
-        rowtwo.setAttribute("style", "background-color: green")
+        rowtwo.setAttribute("class", "future")
     }if (after.includes(threePM)) {
-        rowthree.setAttribute("style", "background-color: green")
+        rowthree.setAttribute("class", "future")
     }if (after.includes(fourPM)) {
-        rowfour.setAttribute("style", "background-color: green")
+        rowfour.setAttribute("class", "future")
     }if (after.includes(fivePM)) {
-        rowfive.setAttribute("style", "background-color: green")
+        rowfive.setAttribute("class", "future")
     }
 
     isBetween()
@@ -230,5 +232,5 @@ Tbody.on("click", ".button", Save);
 
 Day();
 DisplayRows();
-Moment();
+BeforeAfter();
 

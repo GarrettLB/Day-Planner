@@ -28,96 +28,97 @@
       <p id="currentDay" class="lead"></p>
       <p id="currentTime" class="lead"></p>
     </header>
-    <div class="table-responsive">
-      <!-- Timeblocks go here -->
-      <table class="table table-bordered">
-        <thead></thead>
-        <tbody id="Tbody">
-          <tr id="nine">
-            <th>9</th>
-            <th>
-              <input type="text" id="nine-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-              <button>Clear</button>
-            </th>
-          </tr>
-          <tr id="ten">
-            <th>10</th>
-            <th>
-              <input type="text" id="ten-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-          <tr id="eleven">
-            <th>11</th>
-            <th>
-              <input type="text" id="eleven-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-          <tr id="twelve">
-            <th>12</th>
-            <th>
-              <input type="text" id="twelve-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-          <tr id="one">
-            <th>1</th>
-            <th>
-              <input type="text" id="one-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-          <tr id="two">
-            <th>2</th>
-            <th>
-              <input type="text" id="two-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-          <tr id="three">
-            <th>3</th>
-            <th>
-              <input type="text" id="three-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-          <tr id="four">
-            <th>4</th>
-            <th>
-              <input type="text" id="four-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-          <tr id="five">
-            <th>5</th>
-            <th>
-              <input type="text" id="five-text">
-            </th>
-            <th>
-              <button class="button">Save</button>
-            </th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <section class="col-12">
+      <div class="table-responsive">
+        <!-- Timeblocks go here -->
+        <table class="table table-bordered">
+          <thead></thead>
+          <tbody id="Tbody">
+            <tr class="time-block">
+              <th class="hour">9AM</th>
+              <th id="nine">
+                <input type="text" id="nine-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">10AM</th>
+              <th id="ten">
+                <input type="text" id="ten-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">11AM</th>
+              <th id="eleven">
+                <input type="text" id="eleven-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">12PM</th>
+              <th id="twelve">
+                <input type="text" id="twelve-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">1PM</th>
+              <th id="one">
+                <input type="text" id="one-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">2PM</th>
+              <th id="two">
+                <input type="text" id="two-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">3PM</th>
+              <th id="three">
+                <input type="text" id="three-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">4PM</th>
+              <th id="four">
+                <input type="text" id="four-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+            <tr class="time-block">
+              <th class="hour">5PM</th>
+              <th id="five">
+                <input type="text" id="five-text">
+              </th>
+              <th class="saveBtn">
+                <button class="button">Save</button>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
