@@ -7,4 +7,4 @@ Displays current date at the top ,features color changing time slots based on cu
 Screenshot:
 <img src="./assets/images/Screen Shot 2021-09-29 at 10.32.57 PM.png">
 
-Link:https://garrettlb.github.io/Day-Planner/
+Link:https://garrettlb.github.io/Work-Day-Planner/
