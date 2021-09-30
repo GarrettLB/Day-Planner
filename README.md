@@ -1,4 +1,4 @@
-# Day-Planner
+# Work-Day-Planner
 
 A Dynamic Work Day Planner!
 
